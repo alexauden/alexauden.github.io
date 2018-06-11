@@ -1,23 +1,44 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Music Lessons in the Fox Valley area</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+        <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" type="text/css" href="main.css">
+    </head>
+   
+<body>
+    <header class="container">
+    <div class="row">
+      <h1 class="col-sm-8">Welcome to Appleton String Academy</h1>
+      <nav class="col-sm-4 text-right">
+        <p><img src="download (1).png" width=30></p>
+        <p><img src="download%202.png" width=30></p>
+        <p>contact</p>
+      </nav>
+    </div>
+  </header>
+    <div class="header">
 
-<div class="home">
+<h2>Appleton's premier music school</h2>
+    </div>
 
-  <h1 class="page-heading">Posts</h1>
+      <nav class="container">
+      <ul class="row">
+        <li class="col-sm-4" ><a href="#">Our Artistic Vision</a></li>
+        <li class="col-sm-4"><a href="#">Meet the Director</a></li>
+        <li class="col-sm-4"><a href="#">Fall 2018 Program Guide</a></li>
+      </ul>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
-</div>
+    </nav>
+    
+    <nav>
+      <ul>
+          <li><a href="#">Upcoming Events</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+      <div class="contact-btn"><a>Enroll Now!</a>
+      </div>
+    </nav>
+    
+    </body>
