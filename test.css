@@ -599,8 +599,14 @@ background: rgb(154, 184, 194); /* Fallback for older browsers without RGBA-supp
     border-radius: 7px;
    background: rgb(94, 104, 114); /* Fallback for older browsers without RGBA-support */
     background: rgba(94, 104, 114, 0.5);
+    width: 150px;
+    height: 55px;
+    padding: 0px;
+    line-height: 55px
+
     
 }
+
 
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
   color: #fff;
