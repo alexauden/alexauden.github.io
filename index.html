@@ -65,13 +65,40 @@
           </div>
           <div class="col-lg-8 mx-auto">
             <p class="text-faded mb-5">Appleton's premier music school</p>
-            <a class="btn btn-primary btn-xl js-scroll-trigger" href="Login.html">Enroll Now!</a>
-            <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Learn More!</a>
+            <button type="button" class="btn btn-primary btn-xl" data-toggle="modal" data-target="#login">Enroll now</button>  
+            <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Learn More</a>
           </div>
         </div>
       </div>
     </header>
 
+    <div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+              <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Enroll in classes</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+          <div class="editinfo">
+                <form action="loginfunctions.php" method="post">
+                      <div class="beginenroll">
+                          <h6>Enter your email below to begin</h6>
+                          <button type="submit" class="btn-beginenroll" name="login" style="float: right">Continue</button>
+                          <div style="overflow: hidden">
+                          <input class="input2" type="text" name="email" placeholder="email">
+                          </div>
+                    </div>
+                          <div class="modal-footer">
+               
+                    </div>
+                </form>
+          </div>
+          </div>
+    </div>
+    </div>
+    
     <section class="bg-primary" id="about">
       <div class="container">
         <div class="row">
