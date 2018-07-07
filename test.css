@@ -341,7 +341,6 @@ header.masthead p {
 }
 
 .register {
-    min-width: 100px;
     max-width: 400px;
     clear: both;
     align-content: center;
