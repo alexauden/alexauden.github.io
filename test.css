@@ -169,7 +169,7 @@ img::-moz-selection {
 header.masthead {
   padding-top: 12rem;
   padding-bottom: calc(10rem - 56px);
-  background-image: url("header.jpg");
+  background-image: url("../img/header.jpg");
   background-position: center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -223,19 +223,28 @@ header.masthead p {
     text-align: center;
     margin-left: auto;
     margin-right: auto;    
-    
+    background: 
 }
 
 .tabcontent {
     padding:20px;
     min-width: 200px;
     max-width: 450px;    
-    border: 2px solid black;
-    border-radius: 5px;
+    border: 0px solid black;
+    border-radius: 7px;
     display: block;
     margin-bottom: 20px;
     margin-left: auto;
     margin-right: auto;
+        background: rgb(224, 234, 254); /* Fallback for older browsers without RGBA-support */
+    background: rgba(224, 234, 254, 0.5);
+
+
+}
+
+.tabcontent:hover {
+    transform: scale(1.01);
+
 }
 
 .tabcontent input {
@@ -246,9 +255,9 @@ header.masthead p {
 
 
 .tablink{
-    border-top: 2px solid black;
-    border-right: 2px solid black;
-    border-left: 2px solid black;
+    border-top: 0px solid black;
+    border-right: 0px solid black;
+    border-left: 0px solid black;
     border-bottom: none;
     border-top-left-radius : 5px;
     border-top-right-radius: 5px;
@@ -259,12 +268,11 @@ header.masthead p {
 
 .tablink:hover {
     background-color: antiquewhite;
-    border-top: 3px solid black;
-    border-left: 3px solid black;
-    border-right: 3px solid black;
     color: #fff;
   background: rgb(154, 184, 194); /* Fallback for older browsers without RGBA-support */
     background: rgba(154, 184, 194, 0.5);
+    transform: scale(1.05);
+
 }
 
 .button {
@@ -277,9 +285,12 @@ header.masthead p {
     max-width: 500px;
     margin-top: 5px;
     padding: 10px;
-    border: 2px solid black;
-    border-radius: 5px;
+    border: 0px solid black;
+    border-radius: 7px;
     margin-bottom: 20px;
+    background: rgb(224, 234, 254); /* Fallback for older browsers without RGBA-support */
+    background: rgba(224, 234, 254, 0.5);
+
 }
 
 .input-group-modal {
@@ -330,7 +341,7 @@ header.masthead p {
 }
 
 .register {
-    min-width: 200px;
+    min-width: 100px;
     max-width: 400px;
     clear: both;
     align-content: center;
@@ -439,12 +450,19 @@ textarea.input2 + .shadow-input2 {
      padding:20px;
     min-width: 100px;
     max-width: 450px;    
-    border: 2px solid black;
-    border-radius: 5px;
+    border: 0px solid black;
+    border-radius: 7px;
     display: block;
     margin-bottom: 20px;
     margin-left: auto;
     margin-right: auto;
+    background: rgb(224, 234, 254); /* Fallback for older browsers without RGBA-support */
+    background: rgba(224, 234, 254, 0.5);
+}
+
+.enrollcontent:hover {
+    transform: scale(1.01);
+
 }
 
 .logoutbutton {
@@ -481,16 +499,28 @@ textarea.input2 + .shadow-input2 {
     float: right;
 }
 
+.edit:hover {
+    transform: scale(1.05);
+
+}
+
 .enrollbuttons {
      align-content: center;
     max-width: 500px;
     margin-top: 5px;
     padding: 10px;
-    border: 2px solid black;
+    border: 0px solid black;
     border-radius: 5px;
     margin-bottom: 20px;
     margin-left: auto;
     margin-right: auto;
+    background: rgb(224, 234, 254); /* Fallback for older browsers without RGBA-support */
+    background: rgba(224, 234, 254, 0.5);
+
+}
+
+.enrollbuttons:hover {
+    transform: scale(1.01);
 }
 
 @media (min-width: 1200px) {
@@ -598,12 +628,10 @@ background: rgb(154, 184, 194); /* Fallback for older browsers without RGBA-supp
     border-radius: 7px;
    background: rgb(94, 104, 114); /* Fallback for older browsers without RGBA-support */
     background: rgba(94, 104, 114, 0.5);
-    width: 150px;
+    width: 170px;
     height: 55px;
     padding: 0px;
-    line-height: 55px
-
-    
+    line-height: 55px;
 }
 
 
@@ -611,6 +639,7 @@ background: rgb(154, 184, 194); /* Fallback for older browsers without RGBA-supp
   color: #fff;
   background: rgb(154, 184, 194); /* Fallback for older browsers without RGBA-support */
     background: rgba(154, 184, 194, 0.5);
+    transform: scale(1.03);
 }
 
 .btn-primary:active, .btn-primary:focus {
@@ -633,7 +662,9 @@ background: rgb(154, 184, 194); /* Fallback for older browsers without RGBA-supp
 
 .btn-e:hover {
   background: rgb(14, 14, 254); /* Fallback for older browsers without RGBA-support */
-    background: rgba(14, 14, 254, 0.5);    
+    background: rgba(14, 14, 254, 0.5);
+    transform: scale(1.05);
+
    
 }
 
@@ -653,7 +684,8 @@ background: rgb(154, 184, 194); /* Fallback for older browsers without RGBA-supp
 
 .btn-ce:hover {
   background: rgb(254, 54, 54); /* Fallback for older browsers without RGBA-support */
-    background: rgba(254, 54, 54, 0.5);    
+    background: rgba(254, 54, 54, 0.5);  
+    
    
 }
 
