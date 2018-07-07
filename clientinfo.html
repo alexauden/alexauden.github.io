@@ -1,4 +1,5 @@
- <!DOCTYPE html>
+
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8">
@@ -20,7 +21,7 @@
     <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="test.css" rel="stylesheet">
+    <link href="css/creative.css" rel="stylesheet">
 
 </head>
 <body>
@@ -58,6 +59,20 @@
   	<h2>Register</h2>
   </div>
       
+      <div class="content">
+  	<!-- notification message -->
+  	<?php if (isset($_SESSION['success'])) : ?>
+      <div class="success" >
+      	<h3>
+          <?php 
+          	echo $_SESSION['success']; 
+          	unset($_SESSION['success']);
+          ?>
+      	</h3>
+      </div>
+  	<?php endif ?>
+    </div>
+
       <div class="register">
     <form method="post" action="clientinfo.php">
   	<?php include('errors.php'); ?>
@@ -103,21 +118,17 @@
         </p>
   	</div>
 <div class="input-group">
-        <p>
           <label>Student's First Name:</label>
   	  <input type="text" name="firstname3" value="<?php echo $firstname; ?>">
   	  <label>Student's Last Name:</label>
   	  <input type="text" name="lastname3" value="<?php echo $lastname; ?>">
-        </p>
   	  <div class="radio">
             <label>Student's Gender:</label><br>
   	  <input type="radio" name="gender3" value="M">Male<br>
       <input type="radio" name="gender3" value="F">Female
         </div>
-        <p>
   	  <label>Student's Date of Birth:</label>
   	  <input type="date" name="dob3" value="<?php echo $dob; ?>">
-        </p>
   	</div>
         <div class="header">
       <h3>Address Information</h3>
