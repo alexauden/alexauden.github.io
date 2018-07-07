@@ -1,4 +1,25 @@
-<?php include('enterinfo.php') ?>
+<?php include('enterinfo.php'); 
+
+if (isset($_SESSION['LAST_ACTIVITY']) && (time() - $_SESSION['LAST_ACTIVITY'] > 300)) {
+    // last request was more than 30 minutes ago
+    session_unset();     // unset $_SESSION variable for the run-time 
+    session_destroy();   // destroy session data in storage
+}
+$_SESSION['LAST_ACTIVITY'] = time(); // update last activity time stamp
+
+if (!isset($_SESSION['email'])) {
+  	$_SESSION['msg'] = "You must log in first";
+  	header('location: login.php');
+  }
+  if (isset($_GET['logout'])) {
+  	session_destroy();
+  	unset($_SESSION['email']);
+  	header("location: login.php");
+  }
+
+if(isset($session['email'])) 
+
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -54,11 +75,25 @@
     </div>
     
   
-
   <div class="container">
         <div class="loginheader">
   	<h2>Register</h2>
   </div>
+      
+      <div class="content">
+  	<!-- notification message -->
+  	<?php if (isset($_SESSION['success'])) : ?>
+      <div class="success" >
+      	<h3>
+          <?php 
+          	echo $_SESSION['success']; 
+          	unset($_SESSION['success']);
+          ?>
+      	</h3>
+      </div>
+  	<?php endif ?>
+    </div>
+
       <div class="register">
     <form method="post" action="clientinfo.php">
   	<?php include('errors.php'); ?>
