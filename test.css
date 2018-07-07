@@ -290,6 +290,9 @@ header.masthead p {
     margin-bottom: 20px;
     background: rgb(224, 234, 254); /* Fallback for older browsers without RGBA-support */
     background: rgba(224, 234, 254, 0.5);
+    margin-left: auto;
+    margin-right: auto;
+    
 
 }
 
@@ -341,6 +344,7 @@ header.masthead p {
 }
 
 .register {
+    min-width: 100px;
     max-width: 400px;
     clear: both;
     align-content: center;
@@ -352,7 +356,9 @@ header.masthead p {
 .register input {
   width: 100%;
   clear: both;
-  margin-bottom: 10px
+  margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .beginenroll {
@@ -798,7 +804,7 @@ iframe {
 /*------------------------------------------------------------------
 [  ]*/
 .contact1-form {
-  max-width: 390px;
+  width: 390px;
 }
 
 .contact1-form-title {
