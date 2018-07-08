@@ -357,8 +357,6 @@ header.masthead p {
   width: 100%;
   clear: both;
   margin-bottom: 10px;
-    margin-left: 10px;
-    margin-right: 10px;
 }
 
 .beginenroll {
@@ -425,6 +423,7 @@ textarea.input2 + .shadow-input2 {
   -webkit-animation: anim-shadow 0.5s ease-in-out forwards;
   animation: anim-shadow 0.5s ease-in-out forwards;
 }
+
 .btn-beginenroll {
     font-weight: 700;
     color: white;
