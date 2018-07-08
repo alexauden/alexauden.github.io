@@ -820,6 +820,7 @@ input.input1 {
   height: 35px;
   border-radius: 7px;
   padding: 0 20px;
+	width: 100%;
 }
 input.input1 + .shadow-input1 {
   border-radius: 20px;
