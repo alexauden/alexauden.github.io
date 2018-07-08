@@ -70,15 +70,15 @@
     
  
 <div class="tabs">
-    <button class="tablink" onclick="openCity('firstname', this, 'rgba(224, 234, 254, 0.5)')" id="defaultOpen"><?php echo $firstname;?></button>
+    <button class="tablink" onclick="openCity('firstname', this, 'rgba(224, 234, 254, 0.5)')" id="defaultOpen">firstname</button>
         
     <?php 
         if (!empty($row['firstname2'])) {; ?>
-    <button class="tablink" onclick="openCity('firstname2', this, 'rgba(224, 234, 254, 0.5)')"><?php echo $row['firstname2']?></button>
+    <button class="tablink" onclick="openCity('firstname2', this, 'rgba(224, 234, 254, 0.5)')">othername</button>
         
     <?php  } 
         if (!empty($row['firstname3'])) {; ?>
-    <button class="tablink" onclick="openCity('firstname3', this, 'rgba(224, 234, 254, 0.5)')"><?php echo $row['firstname3']?></button>
+    <button class="tablink" onclick="openCity('firstname3', this, 'rgba(224, 234, 254, 0.5)')">thisname</button>
         <?php  } ?>
     <button class="tablink" onclick="openCity('adduser', this, 'rgba(224, 234, 254, 0.5)')" id="defaultOpen">Add student</button>
 
