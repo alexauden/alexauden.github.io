@@ -185,15 +185,15 @@ if(isset($session['username']))
     
  
 <div class="tabs">
-    <button class="tablink" onclick="openCity('firstname', this, 'grey')" id="defaultOpen"><?php echo $firstname;?></button>
+    <button class="tablink" onclick="openCity('firstname', this, 'grey')" id="defaultOpen">firstname</button>
         
     <?php 
         if (!empty($row['firstname2'])) {; ?>
-    <button class="tablink" onclick="openCity('firstname2', this, 'grey')"><?php echo $row['firstname2']?></button>
+    <button class="tablink" onclick="openCity('firstname2', this, 'grey')">thename</button>
         
     <?php  } 
         if (!empty($row['firstname3'])) {; ?>
-    <button class="tablink" onclick="openCity('firstname3', this, 'grey')"><?php echo $row['firstname3']?></button>
+    <button class="tablink" onclick="openCity('firstname3', this, 'grey')">thisname</button>
         <?php  } ?>
     <button class="tablink" onclick="openCity('adduser', this, 'grey')" id="defaultOpen">Add student</button>
 
