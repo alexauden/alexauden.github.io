@@ -234,6 +234,13 @@ img::-moz-selection {
 /* Show the dropdown menu on hover */
 .nav-item:hover .nav-item-content {display: block;
     
+	
+}
+	    
+.info {
+    margin-left: 150px;
+    margin-right: 150px;
+    text-align: justify;
 }
 }
 
@@ -1143,3 +1150,30 @@ textarea.input1 + .shadow-input1 {
 .modal-title{
     opacity: 1
 }
+
+.info {
+    text-align: justify;
+    background: #fff;
+}
+
+.info p, h1, h2, h3, table, button {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.infoheader {
+    background-color: #800080;
+}
+
+.navbarshape {
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid #E6E6FA;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    top: 20px;
+    position: absolute;
+    align-self: center;
+    display: none;
+}
+
+
