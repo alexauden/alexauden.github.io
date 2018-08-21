@@ -1198,4 +1198,6 @@ textarea.input1 + .shadow-input1 {
     display: none;
 }
 
-
+.navbar-toggler {
+	float: right;
+}
